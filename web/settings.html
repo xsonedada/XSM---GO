@@ -1,0 +1,30 @@
+<div class="settings-page">
+    <div class="chats-panel" style="border-right:1px solid var(--border-light);">
+        <div class="panel-header">
+            <h2>Настройки</h2>
+        </div>
+        <div style="flex:1;padding:1.5rem;">
+            <div style="margin-bottom:2rem;">
+                <h3 style="font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-muted);margin-bottom:0.75rem;">Профиль</h3>
+                <div style="display:flex;justify-content:space-between;padding:0.75rem 0;border-bottom:1px solid var(--border-light);">
+                    <span>Пользователь</span>
+                    <span class="text-muted">-</span>
+                </div>
+            </div>
+            <button class="btn btn-danger" onclick="localStorage.removeItem('xsm_token');window.location.href='/web/auth.html';" style="width:100%;">
+                <i class="fa-solid fa-right-from-bracket"></i> Выйти
+            </button>
+        </div>
+    </div>
+    <div class="chat-main">
+        <div class="empty-chat">
+            <div class="empty-illustration">
+                <div class="illustration-circle">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <h2>Настройки</h2>
+                <p>Управление аккаунтом и безопасностью</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSM — Вход</title>
+    <link rel="stylesheet" href="/web/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <!-- Анимированный фон -->
+        <div class="auth-bg">
+            <div class="bg-orb orb-1"></div>
+            <div class="bg-orb orb-2"></div>
+            <div class="bg-orb orb-3"></div>
+        </div>
+
+        <!-- Карточка -->
+        <div class="auth-card">
+            <!-- Левая панель -->
+            <div class="auth-left">
+                <div class="auth-brand">
+    <div class="auth-icon-wrapper">
+        <i class="fa-solid fa-shield-halved"></i>
+    </div>
+    <h1 class="auth-logo-text">XSM</h1>
+    <p>Защищённое общение<br>нового поколения</p>
+</div>
+                <div class="auth-features">
+    <div class="auth-feature">
+        <i class="fa-solid fa-lock"></i>
+        <span>Сквозное шифрование</span>
+    </div>
+    <div class="auth-feature">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Высокий уровень защиты</span>
+    </div>
+    <div class="auth-feature">
+        <i class="fa-solid fa-bolt"></i>
+        <span>Мгновенная синхронизация</span>
+    </div>
+</div>
+                <div class="auth-version">v1.0.0</div>
+            </div>
+
+            <!-- Правая панель -->
+            <div class="auth-right">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Вход</button>
+                    <button class="auth-tab" data-tab="register">Регистрация</button>
+                </div>
+
+                <!-- Форма входа -->
+                <form id="login-form" class="auth-form active">
+                    <div class="input-group">
+                        <i class="fa-solid fa-user input-icon"></i>
+                        <input type="text" id="login-username" placeholder="Имя пользователя" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock input-icon"></i>
+                        <input type="password" id="login-password" placeholder="Пароль" required>
+                        <button type="button" class="toggle-pass" tabindex="-1">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span>Войти</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="form-error" id="login-error"></div>
+                </form>
+
+                <!-- Форма регистрации -->
+                <form id="register-form" class="auth-form">
+                    <div class="input-group">
+                        <i class="fa-solid fa-user input-icon"></i>
+                        <input type="text" id="reg-username" placeholder="Имя пользователя" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                        <input type="email" id="reg-email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock input-icon"></i>
+                        <input type="password" id="reg-password" placeholder="Пароль" required>
+                        <button type="button" class="toggle-pass" tabindex="-1">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bar"><span></span></div>
+                        <small>Надёжность пароля</small>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <span>Создать аккаунт</span>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </button>
+                    <div class="form-error" id="register-error"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/web/js/auth.js"></script>
+</body>
+</html>
