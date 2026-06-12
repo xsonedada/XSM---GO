@@ -162,5 +162,6 @@ docker compose up -d
 Тест функций
 <img width="1905" height="937" alt="image" src="https://github.com/user-attachments/assets/65c93b27-5e32-4aa4-81a8-ec724423ed36" />
 
-Разработано @xsonedev. not supported
+
 </details>
+Разработано @xsonedev. not supported
