@@ -61,7 +61,7 @@
 
 ### 1. Клонируйте репозиторий
 ```bash
-git clone https://github.com/твой-ник/xsm-messenger.git
+git clone https://github.com/xsonedada/XSM---GO.git
 cd xsm-messenger
 ```
 2. Настройте базу данных
